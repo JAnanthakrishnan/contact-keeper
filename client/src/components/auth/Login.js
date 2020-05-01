@@ -16,7 +16,7 @@ const Login = (props) => {
             setAlert('Email is invalid','danger');
             clearErrors();
         }
-        else if(error){
+        else if(error!=='No token - authorization denied'){
             setAlert(error,'danger');
             clearErrors();
         }
